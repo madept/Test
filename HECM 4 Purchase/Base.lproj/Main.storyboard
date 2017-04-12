@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1ZE-8a-ycH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home PageVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomePageVC" id="BYZ-38-t0r" customClass="HomePageVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="kbC-mv-rrR"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H4P Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-cu-Rep">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="AvO-OC-fjW"/>
+                                    <constraint firstAttribute="width" constant="173" id="dgJ-rO-1Of"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdw-0R-55b">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjn-xe-PSd">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="171" id="HHF-yr-01O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Reverse Mortgage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXs-Vy-g0B">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="253" id="OIL-4T-luc"/>
+                                            <constraint firstAttribute="height" constant="21" id="RuC-q1-Aas"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Purchase Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gge-CN-ziE">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="249" id="XCu-lo-Kwv"/>
+                                            <constraint firstAttribute="height" constant="21" id="x7G-Jn-3gS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ke9-3h-ao9">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="dbd-Pe-2du"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gl-Zj-lWm">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="hAr-aD-nDm"/>
+                                            <constraint firstAttribute="height" constant="22" id="tBk-un-XFr"/>
+                                        </constraints>
+                                        <state key="normal" image="uncheck"/>
+                                        <state key="selected" image="check"/>
+                                        <connections>
+                                            <action selector="checkBoxClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Fa-MT-JeA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I confirm that atleast one borrower is atleast 62 year ago" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b2-gZ-yzT">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="HAu-do-evJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st BORROWER'S AGE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEh-8w-lGy">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="196" id="QJK-D1-hMq"/>
+                                            <constraint firstAttribute="height" constant="21" id="vdQ-z6-ytg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YwD-hD-7Rt">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="Q3x-m0-cXR"/>
+                                            <constraint firstAttribute="height" constant="42" id="fZd-eu-x0b"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2nd BORROWER'S AGE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiV-yW-dcq">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="196" id="0Fj-TB-2DO"/>
+                                            <constraint firstAttribute="height" constant="21" id="o25-Qh-KC7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-9r-oXF">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="K9c-gc-LFU"/>
+                                            <constraint firstAttribute="width" constant="82" id="Qpb-Yz-Nvy"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(if any)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xx-Ao-RCm">
+                                        <rect key="frame" x="210" y="303" width="50" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YwD-hD-7Rt" firstAttribute="top" secondItem="CEh-8w-lGy" secondAttribute="bottom" constant="16" id="0pb-y5-IcY"/>
+                                    <constraint firstItem="Vi6-9r-oXF" firstAttribute="centerX" secondItem="CEh-8w-lGy" secondAttribute="centerX" id="1sr-nF-4V2"/>
+                                    <constraint firstAttribute="trailing" secondItem="ke9-3h-ao9" secondAttribute="trailing" constant="36" id="2Nv-Y6-nMa"/>
+                                    <constraint firstItem="7gl-Zj-lWm" firstAttribute="leading" secondItem="Tdw-0R-55b" secondAttribute="leading" constant="36" id="41V-UM-zCg"/>
+                                    <constraint firstItem="Vi6-9r-oXF" firstAttribute="centerX" secondItem="TiV-yW-dcq" secondAttribute="centerX" id="7K1-yK-Pqb"/>
+                                    <constraint firstItem="vjn-xe-PSd" firstAttribute="leading" secondItem="Tdw-0R-55b" secondAttribute="leading" id="9c0-TE-BjD"/>
+                                    <constraint firstItem="vXs-Vy-g0B" firstAttribute="centerX" secondItem="Tdw-0R-55b" secondAttribute="centerX" id="CbX-N1-Nge"/>
+                                    <constraint firstItem="Vi6-9r-oXF" firstAttribute="top" secondItem="TiV-yW-dcq" secondAttribute="bottom" constant="16" id="KQ3-es-lVW"/>
+                                    <constraint firstItem="Vi6-9r-oXF" firstAttribute="centerX" secondItem="Tdw-0R-55b" secondAttribute="centerX" id="MA6-h6-k9y"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vi6-9r-oXF" secondAttribute="bottom" constant="150" id="MSc-dF-f8w"/>
+                                    <constraint firstItem="CEh-8w-lGy" firstAttribute="top" secondItem="vjn-xe-PSd" secondAttribute="bottom" constant="22" id="PFQ-qs-q0G"/>
+                                    <constraint firstItem="7gl-Zj-lWm" firstAttribute="top" secondItem="ke9-3h-ao9" secondAttribute="bottom" constant="9" id="Q2l-98-Gl7"/>
+                                    <constraint firstItem="5b2-gZ-yzT" firstAttribute="leading" secondItem="7gl-Zj-lWm" secondAttribute="trailing" constant="3" id="RGM-pw-m5N"/>
+                                    <constraint firstItem="gge-CN-ziE" firstAttribute="top" secondItem="vXs-Vy-g0B" secondAttribute="bottom" constant="15" id="RZa-EW-SIp"/>
+                                    <constraint firstItem="TiV-yW-dcq" firstAttribute="top" secondItem="YwD-hD-7Rt" secondAttribute="bottom" constant="14" id="SBp-NJ-DdW"/>
+                                    <constraint firstItem="gge-CN-ziE" firstAttribute="leading" secondItem="Tdw-0R-55b" secondAttribute="leading" constant="36" id="a0h-bb-jO7"/>
+                                    <constraint firstItem="Vi6-9r-oXF" firstAttribute="centerX" secondItem="ke9-3h-ao9" secondAttribute="centerX" id="aXl-ii-VDn"/>
+                                    <constraint firstItem="ke9-3h-ao9" firstAttribute="top" secondItem="gge-CN-ziE" secondAttribute="bottom" constant="3" id="dCQ-Vr-id0"/>
+                                    <constraint firstItem="vjn-xe-PSd" firstAttribute="top" secondItem="Tdw-0R-55b" secondAttribute="top" id="dtO-bj-ktI"/>
+                                    <constraint firstItem="Vi6-9r-oXF" firstAttribute="top" secondItem="Tdw-0R-55b" secondAttribute="top" constant="323" id="h6e-G7-Swv"/>
+                                    <constraint firstItem="vXs-Vy-g0B" firstAttribute="top" secondItem="Tdw-0R-55b" secondAttribute="top" constant="26" id="jFx-Ff-2gh"/>
+                                    <constraint firstItem="ke9-3h-ao9" firstAttribute="leading" secondItem="Tdw-0R-55b" secondAttribute="leading" constant="36" id="mAl-B1-Pw9"/>
+                                    <constraint firstAttribute="trailing" secondItem="5b2-gZ-yzT" secondAttribute="trailing" constant="36" id="rMb-4c-3dm"/>
+                                    <constraint firstItem="YwD-hD-7Rt" firstAttribute="centerX" secondItem="Tdw-0R-55b" secondAttribute="centerX" id="svg-gS-J85"/>
+                                    <constraint firstItem="5b2-gZ-yzT" firstAttribute="top" secondItem="ke9-3h-ao9" secondAttribute="bottom" constant="10" id="tXx-08-ozo"/>
+                                    <constraint firstAttribute="trailing" secondItem="vjn-xe-PSd" secondAttribute="trailing" constant="1" id="vzt-gb-9HB"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9d-0u-o59">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="WTM-GR-lNR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qx-gm-qhd">
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5ox-T7-X87"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                <state key="normal" title="CALCULATE DOWNPAYMENT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateDownpaymentClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7XQ-KC-klK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tdw-0R-55b" secondAttribute="trailing" id="0qc-fh-4dM"/>
+                            <constraint firstAttribute="trailing" secondItem="8Qx-gm-qhd" secondAttribute="trailing" constant="20" id="12s-uw-Lxe"/>
+                            <constraint firstItem="s9d-0u-o59" firstAttribute="top" secondItem="Tdw-0R-55b" secondAttribute="bottom" constant="3" id="1QO-cM-jIP"/>
+                            <constraint firstItem="8Qx-gm-qhd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1j4-rl-bOj"/>
+                            <constraint firstItem="Tdw-0R-55b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2er-VH-eQm"/>
+                            <constraint firstItem="Tdw-0R-55b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="83" id="5yo-Hc-pd6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kbC-mv-rrR" secondAttribute="bottom" id="6ju-AS-rXy"/>
+                            <constraint firstItem="kbC-mv-rrR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DcM-Vc-0gb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Qx-gm-qhd" secondAttribute="bottom" constant="13" id="HLs-8U-HbS"/>
+                            <constraint firstItem="sWq-cu-Rep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="35.5" id="RtV-MF-db2"/>
+                            <constraint firstItem="sWq-cu-Rep" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="7" id="aGg-wZ-5lq"/>
+                            <constraint firstItem="Tdw-0R-55b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bFr-UD-pyU"/>
+                            <constraint firstItem="s9d-0u-o59" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cWf-74-muo"/>
+                            <constraint firstAttribute="trailing" secondItem="kbC-mv-rrR" secondAttribute="trailing" id="d9M-SZ-tva"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s9d-0u-o59" secondAttribute="bottom" id="nDx-el-dCo"/>
+                            <constraint firstItem="kbC-mv-rrR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sTu-lK-cia"/>
+                            <constraint firstAttribute="trailing" secondItem="s9d-0u-o59" secondAttribute="trailing" id="wFq-KW-QWP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rcS-pa-EhC"/>
+                    <connections>
+                        <outlet property="checkBoxBtn" destination="7gl-Zj-lWm" id="ivc-Er-JhY"/>
+                        <outlet property="firstBorrowertxtField" destination="YwD-hD-7Rt" id="hEE-iE-gzL"/>
+                        <outlet property="homePurchasePricetxtField" destination="ke9-3h-ao9" id="eir-97-2jr"/>
+                        <outlet property="scrollView" destination="Tdw-0R-55b" id="JwT-0J-K09"/>
+                        <outlet property="secondBorrowertxtField" destination="Vi6-9r-oXF" id="Rwu-Ef-U8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="REr-BP-Qyb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1ZE-8a-ycH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ihk-t6-ogG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LYE-Oy-CKh" kind="relationship" relationship="rootViewController" id="o01-fh-bDD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASl-cm-XdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-533" y="112"/>
+        </scene>
+        <!--LoadingVC-->
+        <scene sceneID="37E-SV-9h1">
+            <objects>
+                <viewController storyboardIdentifier="LoadingVC" id="e5E-Xw-D89" customClass="LoadingVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ffQ-em-bQc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Drh-dC-1gv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xck-v0-kKr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-Xh-JSY"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALCULATING DOWNPAYMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeV-CI-Zwu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Lsw-RK-dU3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H4P Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry8-k3-cn7">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Gp5-Cf-V1w"/>
+                                    <constraint firstAttribute="width" constant="173" id="XaI-kQ-jjK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="progress" translatesAutoresizingMaskIntoConstraints="NO" id="DjF-ja-uEx"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4S3-Xg-k97">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="J23-oB-D3L"/>
+                                    <constraint firstAttribute="width" constant="228" id="xJl-Nh-wRV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4er-h4-HX6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="W0W-HT-Igm"/>
+                                    <constraint firstAttribute="width" constant="97" id="kyL-Nb-f3Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Drh-dC-1gv" firstAttribute="top" secondItem="4S3-Xg-k97" secondAttribute="bottom" constant="106" id="5Bv-np-5ft"/>
+                            <constraint firstItem="Drh-dC-1gv" firstAttribute="top" secondItem="X6L-Xh-JSY" secondAttribute="bottom" id="5xF-ux-Qpi"/>
+                            <constraint firstItem="4S3-Xg-k97" firstAttribute="centerX" secondItem="Xck-v0-kKr" secondAttribute="centerX" id="6Uh-43-KF0"/>
+                            <constraint firstItem="4er-h4-HX6" firstAttribute="centerY" secondItem="Xck-v0-kKr" secondAttribute="centerY" id="9as-gp-66U"/>
+                            <constraint firstItem="4er-h4-HX6" firstAttribute="centerX" secondItem="Xck-v0-kKr" secondAttribute="centerX" id="BRU-O6-34q"/>
+                            <constraint firstItem="DjF-ja-uEx" firstAttribute="centerY" secondItem="Xck-v0-kKr" secondAttribute="centerY" id="D1r-k3-QRQ"/>
+                            <constraint firstAttribute="trailing" secondItem="X6L-Xh-JSY" secondAttribute="trailing" id="JtT-M0-UWf"/>
+                            <constraint firstAttribute="trailing" secondItem="qeV-CI-Zwu" secondAttribute="trailing" constant="16" id="Sq8-R1-wfB"/>
+                            <constraint firstItem="qeV-CI-Zwu" firstAttribute="leading" secondItem="Xck-v0-kKr" secondAttribute="leading" constant="16" id="Y9R-sB-9Ew"/>
+                            <constraint firstItem="Ry8-k3-cn7" firstAttribute="centerX" secondItem="Xck-v0-kKr" secondAttribute="centerX" constant="35.5" id="a12-98-bm2"/>
+                            <constraint firstItem="DjF-ja-uEx" firstAttribute="centerX" secondItem="Xck-v0-kKr" secondAttribute="centerX" id="ixe-Eh-6LN"/>
+                            <constraint firstItem="Ry8-k3-cn7" firstAttribute="top" secondItem="ffQ-em-bQc" secondAttribute="bottom" constant="7" id="rp8-1L-puS"/>
+                            <constraint firstItem="X6L-Xh-JSY" firstAttribute="leading" secondItem="Xck-v0-kKr" secondAttribute="leading" id="tCF-Oc-B3b"/>
+                            <constraint firstItem="qeV-CI-Zwu" firstAttribute="top" secondItem="Ry8-k3-cn7" secondAttribute="bottom" constant="68" id="tMG-ZC-NDf"/>
+                            <constraint firstItem="X6L-Xh-JSY" firstAttribute="top" secondItem="Xck-v0-kKr" secondAttribute="top" id="xc7-vQ-m9b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BoC-hH-hXg"/>
+                    <connections>
+                        <outlet property="loaderImage" destination="DjF-ja-uEx" id="h4G-IZ-Xwq"/>
+                        <outlet property="progressLabel" destination="4er-h4-HX6" id="CFT-iS-UIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WXA-gl-npa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556.25" y="111.97183098591549"/>
+        </scene>
+        <!--SplashVC-->
+        <scene sceneID="oO9-JG-c7z">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="LYE-Oy-CKh" customClass="SplashVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e6I-y9-Ean"/>
+                        <viewControllerLayoutGuide type="bottom" id="47C-zp-piW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CXM-v3-oi6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-C0-9Gq"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pkb-C0-9Gq" firstAttribute="leading" secondItem="CXM-v3-oi6" secondAttribute="leading" id="E8H-jN-JPU"/>
+                            <constraint firstAttribute="trailing" secondItem="Pkb-C0-9Gq" secondAttribute="trailing" id="G4J-XZ-OtT"/>
+                            <constraint firstItem="47C-zp-piW" firstAttribute="top" secondItem="Pkb-C0-9Gq" secondAttribute="bottom" id="Q45-7k-NHf"/>
+                            <constraint firstItem="Pkb-C0-9Gq" firstAttribute="top" secondItem="CXM-v3-oi6" secondAttribute="top" id="iRE-Va-uUr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Xp-Qr-osv"/>
+                    <connections>
+                        <outlet property="splahImageVw" destination="Pkb-C0-9Gq" id="fjl-Ss-IUY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIk-xB-XxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="112"/>
+        </scene>
+        <!--ResultVC-->
+        <scene sceneID="3J9-kP-sqU">
+            <objects>
+                <viewController storyboardIdentifier="ResultVC" id="AuV-UR-70q" customClass="ResultVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fjy-gb-ucM"/>
+                        <viewControllerLayoutGuide type="bottom" id="alv-a4-hc9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="10a-Oo-Nch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="UKK-Lz-QGa"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H4P Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0B-Wv-hfN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="4A2-yj-LHC"/>
+                                    <constraint firstAttribute="width" constant="173" id="c7s-7h-BW2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tz2-iT-P0x">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ks5-5d-py2">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="132" id="Kk6-CQ-eLh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALCULATED DOWNPAYMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJG-RT-2Hr">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="mRN-ow-xHl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Purchase Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s34-pZ-BFT">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Yoq-6u-Jce"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$123,333" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5h-Sv-3sm">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="mqV-7c-ktC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESTIMATED DOWNPAYMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1X-uI-Pex">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="cKl-FC-EHi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Mortgage proceeds :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl6-JC-w1G">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="l0D-YX-gXY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Mortgage proceeds :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2a-rl-Wdn">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8kG-G1-VOT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*This number is just a rough estimate, not an exact estimate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65L-TR-e2D">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="YQv-L7-0VJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 233,444" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vl2-hR-W14">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="MiF-FG-sMK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 333,334" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNJ-cx-vPM">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="vc4-Ww-5d6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kJG-RT-2Hr" firstAttribute="top" secondItem="Tz2-iT-P0x" secondAttribute="top" constant="20" id="0YA-B4-zeV"/>
+                                    <constraint firstAttribute="trailing" secondItem="s34-pZ-BFT" secondAttribute="trailing" constant="66" id="1fp-3k-4IB"/>
+                                    <constraint firstAttribute="trailing" secondItem="KNJ-cx-vPM" secondAttribute="trailing" constant="40" id="3pD-ra-bKf"/>
+                                    <constraint firstItem="o2a-rl-Wdn" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="35" id="5Ob-lh-Dqb"/>
+                                    <constraint firstItem="t1X-uI-Pex" firstAttribute="top" secondItem="R5h-Sv-3sm" secondAttribute="bottom" constant="35" id="7Mo-SH-qdB"/>
+                                    <constraint firstItem="o2a-rl-Wdn" firstAttribute="top" secondItem="cl6-JC-w1G" secondAttribute="bottom" constant="5" id="7h9-Qx-zY2"/>
+                                    <constraint firstItem="Vl2-hR-W14" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="45" id="96g-SN-P94"/>
+                                    <constraint firstItem="65L-TR-e2D" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="22" id="AvT-3A-ofV"/>
+                                    <constraint firstItem="cl6-JC-w1G" firstAttribute="top" secondItem="Ks5-5d-py2" secondAttribute="bottom" constant="15" id="BlY-It-h5d"/>
+                                    <constraint firstItem="kJG-RT-2Hr" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="27" id="CMA-eO-HUz"/>
+                                    <constraint firstItem="s34-pZ-BFT" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="36" id="EyQ-e1-8HS"/>
+                                    <constraint firstItem="R5h-Sv-3sm" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="36" id="Fhd-0v-fxz"/>
+                                    <constraint firstItem="R5h-Sv-3sm" firstAttribute="top" secondItem="s34-pZ-BFT" secondAttribute="bottom" constant="4" id="GAs-vp-rII"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vl2-hR-W14" secondAttribute="trailing" constant="44" id="Hf0-Vp-KDu"/>
+                                    <constraint firstItem="Ks5-5d-py2" firstAttribute="top" secondItem="R5h-Sv-3sm" secondAttribute="bottom" constant="22" id="LiQ-ON-6DN"/>
+                                    <constraint firstItem="cl6-JC-w1G" firstAttribute="centerX" secondItem="Tz2-iT-P0x" secondAttribute="centerX" constant="-6" id="LxH-ru-I0X"/>
+                                    <constraint firstAttribute="trailing" secondItem="cl6-JC-w1G" secondAttribute="trailing" constant="45" id="MNZ-YA-nC6"/>
+                                    <constraint firstAttribute="trailing" secondItem="R5h-Sv-3sm" secondAttribute="trailing" constant="35" id="P4Z-AU-hGH"/>
+                                    <constraint firstItem="65L-TR-e2D" firstAttribute="top" secondItem="Vl2-hR-W14" secondAttribute="bottom" constant="7" id="R33-rR-IXU"/>
+                                    <constraint firstAttribute="bottom" secondItem="o2a-rl-Wdn" secondAttribute="bottom" constant="20" id="Thp-SD-xla"/>
+                                    <constraint firstItem="KNJ-cx-vPM" firstAttribute="top" secondItem="cl6-JC-w1G" secondAttribute="bottom" constant="9" id="aFk-kg-WQh"/>
+                                    <constraint firstAttribute="trailing" secondItem="t1X-uI-Pex" secondAttribute="trailing" constant="35" id="dMK-BQ-1J5"/>
+                                    <constraint firstItem="Ks5-5d-py2" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" id="iap-SX-bHJ"/>
+                                    <constraint firstItem="Vl2-hR-W14" firstAttribute="top" secondItem="t1X-uI-Pex" secondAttribute="bottom" constant="7" id="jiS-og-F5f"/>
+                                    <constraint firstAttribute="trailing" secondItem="65L-TR-e2D" secondAttribute="trailing" constant="22" id="jlq-eS-3Qh"/>
+                                    <constraint firstItem="cl6-JC-w1G" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="33" id="mhc-3K-Ifr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ks5-5d-py2" secondAttribute="trailing" id="mzp-GZ-HeS"/>
+                                    <constraint firstItem="t1X-uI-Pex" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="36" id="nbX-86-PZu"/>
+                                    <constraint firstAttribute="trailing" secondItem="kJG-RT-2Hr" secondAttribute="trailing" constant="27" id="tl1-h6-5OR"/>
+                                    <constraint firstItem="KNJ-cx-vPM" firstAttribute="leading" secondItem="Tz2-iT-P0x" secondAttribute="leading" constant="40" id="uHE-7H-5qX"/>
+                                    <constraint firstItem="s34-pZ-BFT" firstAttribute="top" secondItem="kJG-RT-2Hr" secondAttribute="bottom" constant="15" id="wR8-LO-YTp"/>
+                                    <constraint firstAttribute="trailing" secondItem="o2a-rl-Wdn" secondAttribute="trailing" constant="32" id="xtj-XS-X3e"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pJ-sy-wRA">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="HEC-Ut-fiF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ADq-l1-vlb">
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="ALi-en-Y1W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                <state key="normal" title="CALCULATE ANOTHER DOWNPAYMENT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="caluclateAnotherAction:" destination="AuV-UR-70q" eventType="touchUpInside" id="tD9-Uv-LYk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-gA-Exg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2kp-74-q73"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
+                                <state key="normal" title="  Call Us" image="call_icon"/>
+                                <connections>
+                                    <action selector="callUsAction:" destination="AuV-UR-70q" eventType="touchUpInside" id="yx8-uW-jgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGa-dr-dQd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="bwV-c6-sAK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
+                                <state key="normal" title="  Email Us" image="msg_icon"/>
+                                <connections>
+                                    <action selector="emailUsAction:" destination="AuV-UR-70q" eventType="touchUpInside" id="dQu-bg-QTn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="alv-a4-hc9" firstAttribute="top" secondItem="ADq-l1-vlb" secondAttribute="bottom" constant="8" id="01p-J4-BNe"/>
+                            <constraint firstItem="alv-a4-hc9" firstAttribute="top" secondItem="UKK-Lz-QGa" secondAttribute="bottom" id="2Qs-iS-OYQ"/>
+                            <constraint firstItem="d0B-Wv-hfN" firstAttribute="top" secondItem="Fjy-gb-ucM" secondAttribute="bottom" constant="7" id="8oN-iZ-QYU"/>
+                            <constraint firstItem="9pJ-sy-wRA" firstAttribute="top" secondItem="Tz2-iT-P0x" secondAttribute="bottom" constant="3" id="9vn-qk-emg"/>
+                            <constraint firstItem="JY5-gA-Exg" firstAttribute="width" secondItem="vGa-dr-dQd" secondAttribute="width" id="AQX-Q8-xqf"/>
+                            <constraint firstItem="ADq-l1-vlb" firstAttribute="top" secondItem="vGa-dr-dQd" secondAttribute="bottom" constant="15" id="DoG-en-ceW"/>
+                            <constraint firstItem="9pJ-sy-wRA" firstAttribute="leading" secondItem="10a-Oo-Nch" secondAttribute="leading" id="E5W-bN-bFS"/>
+                            <constraint firstItem="ADq-l1-vlb" firstAttribute="leading" secondItem="10a-Oo-Nch" secondAttribute="leading" constant="18" id="Jst-3r-fby"/>
+                            <constraint firstAttribute="trailing" secondItem="ADq-l1-vlb" secondAttribute="trailing" constant="18" id="KG1-tU-0nI"/>
+                            <constraint firstItem="vGa-dr-dQd" firstAttribute="leading" secondItem="JY5-gA-Exg" secondAttribute="trailing" constant="12" id="Mn2-v0-7uU"/>
+                            <constraint firstAttribute="trailing" secondItem="UKK-Lz-QGa" secondAttribute="trailing" id="PE4-tk-stt"/>
+                            <constraint firstItem="d0B-Wv-hfN" firstAttribute="centerX" secondItem="10a-Oo-Nch" secondAttribute="centerX" constant="35.5" id="PrB-rU-gpw"/>
+                            <constraint firstItem="UKK-Lz-QGa" firstAttribute="leading" secondItem="10a-Oo-Nch" secondAttribute="leading" id="Rtf-F5-Z8b"/>
+                            <constraint firstItem="Tz2-iT-P0x" firstAttribute="top" secondItem="d0B-Wv-hfN" secondAttribute="bottom" constant="26" id="VCp-uN-0uK"/>
+                            <constraint firstItem="Tz2-iT-P0x" firstAttribute="leading" secondItem="10a-Oo-Nch" secondAttribute="leading" id="XLd-oO-Z1l"/>
+                            <constraint firstAttribute="trailing" secondItem="9pJ-sy-wRA" secondAttribute="trailing" id="YYU-cD-Hfh"/>
+                            <constraint firstItem="alv-a4-hc9" firstAttribute="top" secondItem="9pJ-sy-wRA" secondAttribute="bottom" id="ebu-bP-vL0"/>
+                            <constraint firstAttribute="trailing" secondItem="Tz2-iT-P0x" secondAttribute="trailing" id="hzm-fk-Ur7"/>
+                            <constraint firstItem="UKK-Lz-QGa" firstAttribute="top" secondItem="10a-Oo-Nch" secondAttribute="top" id="oAx-CM-P2U"/>
+                            <constraint firstAttribute="trailing" secondItem="vGa-dr-dQd" secondAttribute="trailing" constant="25" id="pHH-z3-ax0"/>
+                            <constraint firstItem="ADq-l1-vlb" firstAttribute="top" secondItem="JY5-gA-Exg" secondAttribute="bottom" constant="15" id="sRS-Ni-6Bk"/>
+                            <constraint firstItem="JY5-gA-Exg" firstAttribute="leading" secondItem="10a-Oo-Nch" secondAttribute="leading" constant="25" id="xYU-Zc-jOr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateDownpaymentBtn" destination="ADq-l1-vlb" id="an1-hs-Jek"/>
+                        <outlet property="callBtn" destination="JY5-gA-Exg" id="4b8-ZY-o74"/>
+                        <outlet property="emailBtn" destination="vGa-dr-dQd" id="gyJ-4a-Mzz"/>
+                        <outlet property="estimatedDownPaymentLabel" destination="Vl2-hR-W14" id="Ws0-pG-MPG"/>
+                        <outlet property="homePurchasePriceLabel" destination="R5h-Sv-3sm" id="LZp-n5-7vj"/>
+                        <outlet property="reverseMortgageLabel" destination="KNJ-cx-vPM" id="2JO-rt-LeW"/>
+                        <outlet property="scrollView" destination="Tz2-iT-P0x" id="a8u-8m-6Oo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Isd-ky-BHc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2205" y="111.97183098591549"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="320" height="568"/>
+        <image name="call_icon" width="18" height="18"/>
+        <image name="check" width="14" height="14"/>
+        <image name="msg_icon" width="19" height="14"/>
+        <image name="progress" width="163" height="169"/>
+        <image name="splash" width="320" height="568"/>
+        <image name="uncheck" width="14" height="14"/>
+    </resources>
+</document>
