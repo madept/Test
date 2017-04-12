@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self welcomeGreeting];
     NSLog(@"********** SPLASH *********");
     // Do any additional setup after loading the view.
 }
@@ -37,6 +37,9 @@
 {
     HomePageVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"HomePageVC"];
     [self.navigationController pushViewController:vc animated:YES];
+}
+-(void)welcomeGreeting{
+    NSLog(@"HI Welcome to github commit again and again");
 }
 /*
 #pragma mark - Navigation
