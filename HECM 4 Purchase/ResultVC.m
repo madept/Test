@@ -35,6 +35,7 @@
     long reverseMortage = (long)_homepurchasePrice-(long)_calculatedDownPayment;
     _reverseMortgageLabel.text=[NSString stringWithFormat:@"$%@",[self formattedCurrencyStringFromString:reverseMortage]];
     // Do any additional setup after loading the view, typically from a nib.
+    [self display];
        
 }
 
@@ -115,5 +116,8 @@
     NSNumber *num = [NSNumber numberWithLongLong:str];
     NSString *formatted = [formatter stringFromNumber:num];
     return formatted;
+}
+-(void)display{
+    NSLog(@"Hello welcome to github Abhiranjan");
 }
 @end
